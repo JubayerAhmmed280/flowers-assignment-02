@@ -9,6 +9,16 @@
   font-variation-settings:
     "wdth" 100;
 }
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+
+.inter-font{
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+}
 /* Shared styles */
 .display-flex{
  display: flex;
@@ -18,6 +28,12 @@
 }
 .dark-3{
     color:#252432;
+}
+.text-color{
+    color: #E95A08;
+}
+.text-color-2{
+    color: rgba(0, 0, 0, 0.5);
 }
 .nav-item{
     list-style: none;
@@ -29,8 +45,33 @@
 }
 .navbar{
     justify-content: space-between;
+    /* align-items: center; */
 }
 .navbar, .banner{
     max-width: 1140px;
     margin: 0 auto;
 }
+/* Banner related styles */
+.banner-containt{
+    max-width: 570px;
+}
+.banner-img{
+    max-width: 570px;
+}
+.banner-title{
+    font-weight: 517;
+    font-size: 65px;
+}
+.banner-description{
+    font-weight: 570;
+    font-size: 22px;
+}
+
+
+/* resposive media query */
+@media screen and (max-width: 576px) {
+    .navbar, .banner{
+        flex-direction: column;
+    }
+
+    }
