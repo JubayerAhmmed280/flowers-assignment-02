@@ -84,17 +84,72 @@
 .btn-primary{
     background-color: #E95A08;
     color: white;
-    justify-content: space-around;
+    font-weight: 270;
+    height: 50;
+    border: none;
 }
 .plants-img{
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 20px;
+    align-items: center;
+    justify-content: center;
 }
+.plan-text{
+    align-items: center;
+    justify-content: center;
+}
+.plant-love{
+    font-weight: bold;
+    font-size: 50px;
+}
+.flower-store{
+    margin-top: 210px;
+    text-align: center;
+    justify-content: center;
+    
+}
+.plant-love-title{
+    align-items: center;
+    justify-content: center;
+    margin-left: 60px;
+}
+.badge{
+    max-width: 286 px;
+    height: 286px;
+    margin-left: 300px;
+    margin-bottom: -138px;
+
+    
+}
+.b-image{
+    overflow: hidden;
+}
+.deals{
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+.details{
+    font-weight: bold;
+    font-size: 50px;
+}
+.row{
+    display: flex;
+    gap: 28px;
+    border-radius: 8px;
+}
+.vaertical-collage{
+    border-radius: 14px;
+}
+
 /* resposive media query */
 @media screen and (max-width: 576px) {
-    .navbar, .banner{
+    .navbar, .banner, .flower-store, .row {
         flex-direction: column;
+    }
+    .plants-img{
+        grid-template-columns: repeat(2, 1fr);
     }
 
     }
