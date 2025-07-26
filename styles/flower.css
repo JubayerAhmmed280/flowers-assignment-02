@@ -66,8 +66,31 @@
     font-weight: 570;
     font-size: 22px;
 }
-
-
+.main{
+    max-width: 1140px;
+    margin: 0 auto;
+}
+.plants{
+    text-align: center;
+}
+.plants-title{
+    font-weight: bold;
+    font-size: 50px;
+}
+.plants-description{
+    font-weight: 400;
+    font-size: 22px;
+}
+.btn-primary{
+    background-color: #E95A08;
+    color: white;
+    justify-content: space-around;
+}
+.plants-img{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
 /* resposive media query */
 @media screen and (max-width: 576px) {
     .navbar, .banner{
